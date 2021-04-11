@@ -1,0 +1,27 @@
+{
+    "name": "nodelearning",
+    "version": "1.0.0",
+    "description": "Self-learning",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "nodemon --inspect src/index.js",
+        "watch": "node-sass -w src/resource/scss/app.scss src/public/css/app.css",
+        "test": "test"
+    },
+    "keywords": [
+        "f8",
+        "Nodejs",
+        "Learning"
+    ],
+    "author": "tanluu",
+    "license": "ISC",
+    "devDependencies": {
+        "morgan": "^1.10.0",
+        "node-sass": "^5.0.0"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^5.3.0",
+        "nodemon": "^2.0.7"
+    }
+}
