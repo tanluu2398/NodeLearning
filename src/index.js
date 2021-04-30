@@ -12,6 +12,9 @@ db.connect()
 
 app.use(express.static(path.join(__dirname, 'public')))
 
+
+app.use(express.urlencoded())
+
 //HTTP logger
 app.use(morgan('combined'))
 

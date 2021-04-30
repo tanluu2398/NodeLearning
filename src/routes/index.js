@@ -1,10 +1,10 @@
 const newsRouter = require('./news')
 const courseRouter = require('./courses')
 const siteRouter = require('./site')
+const { urlencoded } = require('express')
 const route = (app) => {
-
     app.use('/news', newsRouter)
-    app.use('/course', courseRouter)
+    app.use('/courses', courseRouter)
     app.use('/', siteRouter)
 }
 
